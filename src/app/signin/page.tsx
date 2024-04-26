@@ -1,3 +1,4 @@
+
 import { signIn } from "@/services/auth/auth"
  
 export default function SignIn() {
@@ -5,10 +6,10 @@ export default function SignIn() {
     <form
       action={async () => {
         "use server"
-        await signIn("google")
+        await signIn("discord")
       }}
     >
-      <button type="submit">Signin with Google</button>
+      <button type="submit">Signin with Discord</button>
     </form>
   )
 } 
